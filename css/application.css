@@ -22352,9 +22352,23 @@ a.text-gray-lighter:focus {
 .side-nav li a:hover, .side-nav li a:focus {
   background: rgba(0, 0, 0, 0.07);
 }
-
-.side-nav li a:hover{
+/* .side-nav li a {
+  border-left: 2px solid transparent;
+}
+.side-nav li a:hover {
   border-radius: 0 !important;
+  border-left: 2px solid #3ECD74;
+  -webkit-transition: .3s;
+  transition: .3s;  
+} */
+.side-nav li a {
+  border-left: 2px solid transparent;
+}
+.side-nav li a:hover {
+  border-radius: 0 !important;
+  border-left: 2px solid #3ECD74;
+  -webkit-transition: .3s;
+  transition: .3s;  
 }
 
 .side-nav li a {
@@ -22575,7 +22589,8 @@ ul#side-nav {
   top: 13px;
   opacity: 0;
   visibility: hidden;
-  transition: .3s;
+  -webkit-transition: .3s;
+  transition: .3s; 
   background-color: #154265 20%;
   background-image: radial-gradient(farthest-side ellipse at 10% 0, #154265 20%, #7392c2);
   background-image: -webkit-radial-gradient(10% 0, farthest-side ellipse, #154265 20%, #7392c2);
